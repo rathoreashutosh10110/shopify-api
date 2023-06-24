@@ -1,0 +1,19 @@
+<body>
+    <script type="text/javascript">
+      var configuration = {
+        widgetId: "3366706a3533323634333239",
+        tokenAuth: "398971Tbze9Ovc648bf389P1",
+        identifier: "9548518042>(optional)",
+        success: (data) => {
+          // get verified token in response
+          console.log('success response', data);
+        },
+        failure: (error) => {
+          // handle error
+          console.log('failure reason', error);
+        }
+      };
+    </script>
+    <script type="text/javascript" onload="initSendOTP(configuration)"
+      src="https://control.msg91.com/app/assets/otp-provider/otp-provider.js"> </script>
+  </body>
